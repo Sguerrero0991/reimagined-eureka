@@ -8,4 +8,14 @@ class Gradebook
   def add_course(course)
     @courses << course
   end
+
+  def lis_all_students
+    hash = {}
+    courses.each do |course|
+      hash[course] = course.students
+    end
+    p hash
+  end
+
+  
 end
