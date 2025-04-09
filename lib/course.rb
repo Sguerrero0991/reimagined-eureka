@@ -5,4 +5,8 @@ class Course
     @capacity = capacity
     @students = []
   end
+
+  def enroll(student)
+    @students << student
+  end
 end
