@@ -11,6 +11,6 @@ class Course
   end
 
   def full?
-    @students.count >= 2 
+    @students.count == capacity
   end
 end
