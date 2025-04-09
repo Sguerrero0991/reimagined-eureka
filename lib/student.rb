@@ -9,4 +9,8 @@ class Student
   def log_score(score)
     @scores << score
   end
+
+  def grade
+    @scores.sum.to_f / @scores.count
+  end
 end
