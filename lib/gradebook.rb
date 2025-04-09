@@ -17,5 +17,13 @@ class Gradebook
     p hash
   end
 
-  
+  def students_below(threshold)
+    students_list =[]
+    courses.each do |course|
+      course.students.each do |student|
+        students_list << student if student.grade <= threshold
+      end
+    end
+    p students_list
+  end
 end
